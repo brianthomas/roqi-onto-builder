@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance#" xmlns:ucd="http://www.ivoa.net/Document/WD/vocabularies/20080222/UCD#" xmlns:r="http://www.ivoa.net/owl/v1.0/registryResource.owl#" xmlns="http://www.ivoa.net/owl/v1.0/registrySubject.owl#" xml:base="http://www.ivoa.net/owl/v1.0/registrySubject.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.ivoa.net/Document/WD/vocabularies/20080222/UCD"/>
+    <owl:imports rdf:resource="http://www.ivoa.net/owl/v1.0/registryResource.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROQI application ontology.</rdfs:comment>
+  </owl:Ontology>
+  <owl:Class rdf:ID="subject"/>
+  <owl:Class rdf:ID="globular_cluster.photometry--wideband">
+    <rdfs:label>Globular_cluster Photometry--wideband</rdfs:label>
+  </owl:Class>
+</rdf:RDF>

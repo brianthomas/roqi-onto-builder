@@ -1,0 +1,55 @@
+---
+abstract: 'false'
+author:
+  - 'Brian Thomas <bthomas@noao.edu>'
+build_requires:
+  LWP::Simple: 5.835
+  List::MoreUtils: 0.22
+  Scalar::Util: 1.22
+  XML::LibXML: 1.70
+  XML::LibXML::Common: 1.70
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3603'
+license: lgpl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: ROQI
+provides:
+  AccessUrl:
+    file: lib/ROQI/Ontology/Tools.pm
+  Capability:
+    file: lib/ROQI/Ontology/Tools.pm
+  Content:
+    file: lib/ROQI/Ontology/Tools.pm
+  Coverage:
+    file: lib/ROQI/Ontology/Tools.pm
+  Curation:
+    file: lib/ROQI/Ontology/Tools.pm
+  Interface:
+    file: lib/ROQI/Ontology/Tools.pm
+  ROQI:
+    file: lib/ROQI.pm
+    version: 1.0
+  ROQI::AstroDictionary:
+    file: lib/ROQI/AstroDictionary.pm
+  ROQI::DBTools:
+    file: lib/ROQI/DBTools.pm
+  ROQI::Ontology::Fixer:
+    file: lib/ROQI/Ontology/Fixer.pm
+  ROQI::Ontology::Tools:
+    file: lib/ROQI/Ontology/Tools.pm
+  ROQI::Tokenizer:
+    file: lib/ROQI/Tokenizer.pm
+  ROQI::Util:
+    file: lib/ROQI/Util.pm
+  Resource:
+    file: lib/ROQI/Ontology/Tools.pm
+  TestQuery:
+    file: lib/ROQI/Ontology/Tools.pm
+  ValidationLevel:
+    file: lib/ROQI/Ontology/Tools.pm
+resources:
+  license: http://opensource.org/licenses/lgpl-license.php
+version: 1.0

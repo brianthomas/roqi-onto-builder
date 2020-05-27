@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ri:Resource xmlns:ri="http://www.ivoa.net/xml/RegistryInterface/v1.0"
+             xmlns:vr="http://www.ivoa.net/xml/VOResource/v1.0"
+             xmlns:vs="http://www.ivoa.net/xml/VODataService/v1.0"
+             xmlns:cs="http://www.ivoa.net/xml/ConeSearch/v1.0"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:type="vs:CatalogService"
+             created="2010-11-17T14:14:50"
+             updated="2010-11-17T14:14:50"
+             status="active"
+             xsi:schemaLocation="http://www.ivoa.net/xml/VOResource/v1.0        http://www.ivoa.net/xml/VOResource/v1.0                  http://www.ivoa.net/xml/VODataService/v1.0                  http://www.ivoa.net/xml/VODataService/v1.0        http://www.ivoa.net/xml/ConeSearch/v1.0                  http://www.ivoa.net/xml/ConeSearch/v1.0">
+   <validationLevel validatedBy="ivo://CDS.VizieR">1</validationLevel>
+   <title>Short Title (Alvarado+, 1995)</title>
+   <shortName>J/AJ/109/1169</shortName>
+   <identifier>ivo://CDS.VizieR/J/AJ/109/1169</identifier>
+   <curation>
+      <publisher ivo-id="ivo://CDS">CDS</publisher>
+      <creator>
+         <name>Alvarado F., Wenderoth E., Alcaino G., Liller W.</name>
+      </creator>
+      <date role="creation">2010-11-17T14:14:50</date>
+      <contact>
+         <name>CDS support team</name>
+         <address>CDS, Observatoire de Strasbourg, 11 rue de l'Universite, F-67000 Strasbourg, France</address>
+         <email>question@simbad.u-strasbg.fr</email>
+      </contact>
+   </curation>
+   <content>
+      <subject>Globular_Clusters</subject>
+      <subject>Photometry:wide-band</subject>
+      <source format="bibcode">1995AJ....109.1169A</source>
+      <referenceURL>http://cdsarc.u-strasbg.fr/cgi-bin/Cat?J/AJ/109/1169</referenceURL>
+      <type>Catalog</type>
+      <contentLevel>Research</contentLevel>
+   </content>
+   <rights>public</rights>
+   <capability>
+      <interface xsi:type="vr:WebBrowser">         
+         <accessURL use="full">http://vizier.u-strasbg.fr/cgi-bin/VizieR-2?-source=J/AJ/109/1169</accessURL>
+      </interface>
+   </capability>
+   <capability>
+      <interface xsi:type="vs:ParamHTTP">         
+         <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/votable/-dtd/-A?-source=J/AJ/109/1169</accessURL>
+         <queryType>GET</queryType>
+         <resultType>text/xml+votable</resultType>
+      </interface>
+   </capability>
+   <capability xsi:type="cs:ConeSearch" standardID="ivo://ivoa.net/std/ConeSearch">      
+      <interface xsi:type="vs:ParamHTTP" role="std">         
+         <accessURL use="base">http://vizier.u-strasbg.fr/viz-bin/votable/-A?-source=J/AJ/109/1169&amp;</accessURL>
+         <queryType>GET</queryType>
+         <resultType>text/xml+votable</resultType>
+      </interface>
+      <maxSR>180</maxSR>
+      <maxRecords>9999</maxRecords>
+      <verbosity>true</verbosity>
+      <testQuery>
+         <ra>0.0</ra>
+         <dec>+90.0</dec>
+         <sr>0.1</sr>
+      </testQuery>
+   </capability>
+   <coverage>
+      <footprint>http://cdsarc.u-strasbg.fr/viz-bin/w/Footprint?-gal&amp;-z&amp;8&amp;-s&amp;sqrt&amp;catid=51091169</footprint>
+      <waveband>Optical</waveband>
+      <waveband>Infrared</waveband>
+   </coverage>
+   <table>      
+      <name>J/AJ/109/1169/tables</name>
+      <description>Photoelectric magnitudes in the 3 clusters (tables 2, 3 and 4 of paper)</description>
+      <column>         
+         <name>recno</name>
+         <description>Record number within the original table (starting from 1)</description>
+         <unit> </unit>
+         <ucd>meta.record</ucd>
+      </column>
+      <column>         
+         <name>NGC</name>
+         <description>Designation of the cluster</description>
+         <unit> </unit>
+         <ucd>meta.id.parent</ucd>
+      </column>
+      <column>         
+         <name>Seq</name>
+         <description>Sequence number of the star in the cluster &lt;Cl* NGC NNNN AWAL NN&gt; in Simbad</description>
+         <unit> </unit>
+         <ucd>meta.id</ucd>
+      </column>
+      <column>         
+         <name>RAJ2000</name>
+         <description>Right Ascension J2000</description>
+         <unit>"h:m:s"</unit>
+         <ucd>pos.eq.ra;meta.main</ucd>
+      </column>
+      <column>         
+         <name>DEJ2000</name>
+         <description>Declination J2000</description>
+         <unit>"d:m:s"</unit>
+         <ucd>pos.eq.dec;meta.main</ucd>
+      </column>
+      <column>         
+         <name>s</name>
+         <description>[MU] Source of position: 2MASS (Cat. II/246) or UCAC3 (Cat. I/315)</description>
+         <unit> </unit>
+         <ucd>meta.ref;pos.frame</ucd>
+      </column>
+      <column>         
+         <name>Vmag</name>
+         <description>Johnson U magnitude</description>
+         <unit>mag</unit>
+         <ucd>phot.mag;em.opt.V</ucd>
+      </column>
+      <column>         
+         <name>B-V</name>
+         <description>Johnson B-V magnitude</description>
+         <unit>mag</unit>
+         <ucd>phot.color;em.opt.B;em.opt.V</ucd>
+      </column>
+      <column>         
+         <name>U-B</name>
+         <description>? Johnson U-B magnitude</description>
+         <unit>mag</unit>
+         <ucd>phot.color;em.opt.U;em.opt.B</ucd>
+      </column>
+      <column>         
+         <name>V-R</name>
+         <description>Johnson Kron-Cousins V-R color index</description>
+         <unit>mag</unit>
+         <ucd>phot.color;em.opt.V;em.opt.R</ucd>
+      </column>
+      <column>         
+         <name>R-I</name>
+         <description>Kron-Cousins color index [(V-I) - (V-R)]</description>
+         <unit>mag</unit>
+         <ucd>phot.color;em.opt.R;em.opt.I</ucd>
+      </column>
+      <column>         
+         <name>V-I</name>
+         <description>Johnson Kron-Cousins V-I color index</description>
+         <unit>mag</unit>
+         <ucd>phot.color;em.opt.V;em.opt.I</ucd>
+      </column>
+   </table>
+</ri:Resource>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance#" xmlns:ucd="http://www.ivoa.net/Document/WD/vocabularies/20080222/UCD#" xmlns:r="http://www.ivoa.net/owl/v1.0/registryResource.owl#" xmlns="http://www.ivoa.net/owl/v1.0/registrySubject.owl#" xml:base="http://www.ivoa.net/owl/v1.0/registrySubject.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.ivoa.net/Document/WD/vocabularies/20080222/UCD"/>
+    <owl:imports rdf:resource="http://www.ivoa.net/owl/v1.0/registryResource.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROQI application ontology.</rdfs:comment>
+  </owl:Ontology>
+  <owl:Class rdf:ID="subject"/>
+  <owl:Class rdf:ID="globular_cluster.photometry--wideband">
+    <rdfs:label>Globular_cluster Photometry--wideband</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#hasResource"/>
+        </owl:onProperty>
+        <owl:hasValue>
+          <r:Resource rdf:ID="t_CDS_VizieR_J_AJ_109_1169">
+            <r:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">ivo://CDS.VizieR/J/AJ/109/1169</r:identifier>
+            <r:shortName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J/AJ/109/1169</r:shortName>
+            <r:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Title (Alvarado+, 1995)</r:title>
+            <r:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">public</r:rights>
+            <r:hasCoverage>
+              <r:Coverage rdf:ID="t_CDS_VizieR_J_AJ_109_1169_cov">
+                <r:footprint rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://cdsarc.u-strasbg.fr/viz-bin/w/Footprint?-gal&amp;-z&amp;8&amp;-s&amp;sqrt&amp;catid=51091169</r:footprint>
+                <r:waveband rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infrared</r:waveband>
+              </r:Coverage>
+            </r:hasCoverage>
+            <r:hasValidationLevel>
+              <r:ValidationLevel rdf:ID="t_CDS_VizieR_J_AJ_109_1169_val">
+                <r:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</r:value>
+                <r:validatedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">ivo://CDS.VizieR</r:validatedBy>
+              </r:ValidationLevel>
+            </r:hasValidationLevel>
+            <r:hasCapability>
+              <r:Capability rdf:ID="t_CDS_VizieR_J_AJ_109_1169_cap0">
+                <r:hasInterface>
+                  <r:Interface rdf:ID="t_CDS_VizieR_J_AJ_109_1169_cap0iface">
+                    <xsi:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vr:WebBrowser</xsi:type>
+                    <r:hasAccessURL>
+                      <r:AccessURL rdf:ID="t_CDS_VizieR_J_AJ_109_1169_cap0iface_aurl">
+                        <r:use rdf:datatype="http://www.w3.org/2001/XMLSchema#string">full</r:use>
+                        <r:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://vizier.u-strasbg.fr/cgi-bin/VizieR-2?-source=J/AJ/109/1169</r:url>
+                      </r:AccessURL>
+                    </r:hasAccessURL>
+                  </r:Interface>
+                </r:hasInterface>
+              </r:Capability>
+            </r:hasCapability>
+            <r:hasCapability>
+              <r:Capability rdf:ID="t_CDS_VizieR_J_AJ_109_1169_cap1">
+                <r:hasInterface>
+                  <r:Interface rdf:ID="t_CDS_VizieR_J_AJ_109_1169_cap1iface">
+                    <xsi:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vs:ParamHTTP</xsi:type>
+                    <r:queryType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GET</r:queryType>
+                    <r:resultType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/xml+votable</r:resultType>
+                    <r:hasAccessURL>
+                      <r:AccessURL rdf:ID="t_CDS_VizieR_J_AJ_109_1169_cap1iface_aurl">
+                        <r:use rdf:datatype="http://www.w3.org/2001/XMLSchema#string">base</r:use>
+                        <r:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://vizier.u-strasbg.fr/viz-bin/votable/-dtd/-A?-source=J/AJ/109/1169</r:url>
+                      </r:AccessURL>
+                    </r:hasAccessURL>
+                  </r:Interface>
+                </r:hasInterface>
+              </r:Capability>
+            </r:hasCapability>
+            <r:hasCapability>
+              <r:Capability rdf:ID="t_CDS_VizieR_J_AJ_109_1169_cap2">
+                <r:standardId rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">ivo://ivoa.net/std/ConeSearch</r:standardId>
+                <xsi:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cs:ConeSearch</xsi:type>
+                <r:hasInterface>
+                  <r:Interface rdf:ID="t_CDS_VizieR_J_AJ_109_1169_cap2iface">
+                    <xsi:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vs:ParamHTTP</xsi:type>
+                    <r:queryType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GET</r:queryType>
+                    <r:resultType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text/xml+votable</r:resultType>
+                    <r:role rdf:datatype="http://www.w3.org/2001/XMLSchema#string">std</r:role>
+                    <r:hasAccessURL>
+                      <r:AccessURL rdf:ID="t_CDS_VizieR_J_AJ_109_1169_cap2iface_aurl">
+                        <r:use rdf:datatype="http://www.w3.org/2001/XMLSchema#string">base</r:use>
+                        <r:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://vizier.u-strasbg.fr/viz-bin/votable/-A?-source=J/AJ/109/1169&amp;</r:url>
+                      </r:AccessURL>
+                    </r:hasAccessURL>
+                  </r:Interface>
+                </r:hasInterface>
+              </r:Capability>
+            </r:hasCapability>
+          </r:Resource>
+        </owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="hasResource">
+    <rdfs:range rdf:resource="http://www.ivoa.net/owl/v1.0/registryResource.owl#Resource"/>
+    <rdfs:domain rdf:resource="#subject"/>
+  </owl:ObjectProperty>
+</rdf:RDF>

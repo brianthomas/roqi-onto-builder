@@ -1,0 +1,27 @@
+Build.PL
+doc/README.roqibuild
+lib/ROQI.pm
+lib/ROQI/DBTools.pm
+lib/ROQI/Ontology/Creator.pm
+lib/ROQI/Ontology/Fixer.pm
+lib/ROQI/Ontology/Trimmer.pm
+lib/ROQI/Util.pm
+lib/ROQI/Constants.pm
+MANIFEST			This list of files
+META.yml
+resources/registryResource.owl
+resources/UCD.owl
+script/create_roqi_dbloadfile.pl
+script/create_roqi_onto.pl
+t/CDS.VizieR_J_AJ_109_1169.xml
+t/db_load.xml
+t/DBTools.t
+t/extract_output.owl
+t/extract_output2.owl
+t/fixed_output.owl
+t/fixed_output2.owl
+t/OntoTools.t
+t/TestUtils.pm
+t/trimmed_output.owl
+t/trimmed_output2.owl
+t/vopdc.obspm_portal.xml

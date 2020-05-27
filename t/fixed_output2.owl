@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance#" xmlns:ucd="http://www.ivoa.net/Document/WD/vocabularies/20080222/UCD#" xmlns:r="http://www.ivoa.net/owl/v1.0/registryResource.owl#" xmlns="http://www.ivoa.net/owl/v1.0/registrySubject.owl#" xml:base="http://www.ivoa.net/owl/v1.0/registrySubject.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.ivoa.net/Document/WD/vocabularies/20080222/UCD"/>
+    <owl:imports rdf:resource="http://www.ivoa.net/owl/v1.0/registryResource.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROQI application ontology.</rdfs:comment>
+  </owl:Ontology>
+  <owl:Class rdf:ID="subject"/>
+  <owl:Class rdf:ID="asteroid.comet.image.planetary_system.spectrum.virtual_observatory">
+    <rdfs:label>Asteroid Comet Image Planetary_system Spectrum Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#comet.image.planetary_system.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.image.planetary_system.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.planetary_system.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.image.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.image.planetary_system.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.image.planetary_system.spectrum"/>
+  </owl:Class>
+  <owl:Class rdf:ID="comet.image.planetary_system.spectrum.virtual_observatory">
+    <rdfs:label>Comet Image Planetary_system Spectrum Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#image.planetary_system.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#comet.planetary_system.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#comet.image.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#comet.image.planetary_system.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#comet.image.planetary_system.spectrum"/>
+  </owl:Class>
+  <owl:Class rdf:ID="image.planetary_system.spectrum.virtual_observatory">
+    <rdfs:label>Image Planetary_system Spectrum Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#planetary_system.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#image.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#image.planetary_system.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#image.planetary_system.spectrum"/>
+  </owl:Class>
+  <owl:Class rdf:ID="planetary_system.spectrum.virtual_observatory">
+    <rdfs:label>Planetary_system Spectrum Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#planetary_system.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#planetary_system.spectrum"/>
+  </owl:Class>
+  <owl:Class rdf:ID="spectrum.virtual_observatory">
+    <rdfs:label>Spectrum Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#spectrum"/>
+  </owl:Class>
+  <owl:Class rdf:ID="virtual_observatory">
+    <rdfs:label>Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#subject"/>
+  </owl:Class>
+  <owl:Class rdf:ID="spectrum">
+    <rdfs:label>Spectrum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#subject"/>
+  </owl:Class>
+  <owl:Class rdf:ID="planetary_system.virtual_observatory">
+    <rdfs:label>Planetary_system Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#planetary_system"/>
+  </owl:Class>
+  <owl:Class rdf:ID="planetary_system">
+    <rdfs:label>Planetary_system</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#subject"/>
+  </owl:Class>
+  <owl:Class rdf:ID="planetary_system.spectrum">
+    <rdfs:label>Planetary_system Spectrum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#spectrum"/>
+    <rdfs:subClassOf rdf:resource="#planetary_system"/>
+  </owl:Class>
+  <owl:Class rdf:ID="image.spectrum.virtual_observatory">
+    <rdfs:label>Image Spectrum Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#image.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#image.spectrum"/>
+  </owl:Class>
+  <owl:Class rdf:ID="image.virtual_observatory">
+    <rdfs:label>Image Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#image"/>
+  </owl:Class>
+  <owl:Class rdf:ID="image">
+    <rdfs:label>Image</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#subject"/>
+  </owl:Class>
+  <owl:Class rdf:ID="image.spectrum">
+    <rdfs:label>Image Spectrum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#spectrum"/>
+    <rdfs:subClassOf rdf:resource="#image"/>
+  </owl:Class>
+  <owl:Class rdf:ID="image.planetary_system.virtual_observatory">
+    <rdfs:label>Image Planetary_system Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#planetary_system.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#image.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#image.planetary_system"/>
+  </owl:Class>
+  <owl:Class rdf:ID="image.planetary_system">
+    <rdfs:label>Image Planetary_system</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#planetary_system"/>
+    <rdfs:subClassOf rdf:resource="#image"/>
+  </owl:Class>
+  <owl:Class rdf:ID="image.planetary_system.spectrum">
+    <rdfs:label>Image Planetary_system Spectrum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#planetary_system.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#image.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#image.planetary_system"/>
+  </owl:Class>
+  <owl:Class rdf:ID="comet.planetary_system.spectrum.virtual_observatory">
+    <rdfs:label>Comet Planetary_system Spectrum Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#planetary_system.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#comet.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#comet.planetary_system.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#comet.planetary_system.spectrum"/>
+  </owl:Class>
+  <owl:Class rdf:ID="comet.spectrum.virtual_observatory">
+    <rdfs:label>Comet Spectrum Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#comet.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#comet.spectrum"/>
+  </owl:Class>
+  <owl:Class rdf:ID="comet.virtual_observatory">
+    <rdfs:label>Comet Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#comet"/>
+  </owl:Class>
+  <owl:Class rdf:ID="comet">
+    <rdfs:label>Comet</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#subject"/>
+  </owl:Class>
+  <owl:Class rdf:ID="comet.spectrum">
+    <rdfs:label>Comet Spectrum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#spectrum"/>
+    <rdfs:subClassOf rdf:resource="#comet"/>
+  </owl:Class>
+  <owl:Class rdf:ID="comet.planetary_system.virtual_observatory">
+    <rdfs:label>Comet Planetary_system Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#planetary_system.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#comet.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#comet.planetary_system"/>
+  </owl:Class>
+  <owl:Class rdf:ID="comet.planetary_system">
+    <rdfs:label>Comet Planetary_system</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#planetary_system"/>
+    <rdfs:subClassOf rdf:resource="#comet"/>
+  </owl:Class>
+  <owl:Class rdf:ID="comet.planetary_system.spectrum">
+    <rdfs:label>Comet Planetary_system Spectrum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#planetary_system.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#comet.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#comet.planetary_system"/>
+  </owl:Class>
+  <owl:Class rdf:ID="comet.image.spectrum.virtual_observatory">
+    <rdfs:label>Comet Image Spectrum Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#image.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#comet.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#comet.image.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#comet.image.spectrum"/>
+  </owl:Class>
+  <owl:Class rdf:ID="comet.image.virtual_observatory">
+    <rdfs:label>Comet Image Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#image.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#comet.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#comet.image"/>
+  </owl:Class>
+  <owl:Class rdf:ID="comet.image">
+    <rdfs:label>Comet Image</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#image"/>
+    <rdfs:subClassOf rdf:resource="#comet"/>
+  </owl:Class>
+  <owl:Class rdf:ID="comet.image.spectrum">
+    <rdfs:label>Comet Image Spectrum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#image.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#comet.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#comet.image"/>
+  </owl:Class>
+  <owl:Class rdf:ID="comet.image.planetary_system.virtual_observatory">
+    <rdfs:label>Comet Image Planetary_system Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#image.planetary_system.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#comet.planetary_system.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#comet.image.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#comet.image.planetary_system"/>
+  </owl:Class>
+  <owl:Class rdf:ID="comet.image.planetary_system">
+    <rdfs:label>Comet Image Planetary_system</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#image.planetary_system"/>
+    <rdfs:subClassOf rdf:resource="#comet.planetary_system"/>
+    <rdfs:subClassOf rdf:resource="#comet.image"/>
+  </owl:Class>
+  <owl:Class rdf:ID="comet.image.planetary_system.spectrum">
+    <rdfs:label>Comet Image Planetary_system Spectrum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#image.planetary_system.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#comet.planetary_system.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#comet.image.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#comet.image.planetary_system"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.image.planetary_system.spectrum.virtual_observatory">
+    <rdfs:label>Asteroid Image Planetary_system Spectrum Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#image.planetary_system.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.planetary_system.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.image.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.image.planetary_system.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.image.planetary_system.spectrum"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.planetary_system.spectrum.virtual_observatory">
+    <rdfs:label>Asteroid Planetary_system Spectrum Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#planetary_system.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.planetary_system.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.planetary_system.spectrum"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.spectrum.virtual_observatory">
+    <rdfs:label>Asteroid Spectrum Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.spectrum"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.virtual_observatory">
+    <rdfs:label>Asteroid Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid">
+    <rdfs:label>Asteroid</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#subject"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.spectrum">
+    <rdfs:label>Asteroid Spectrum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#spectrum"/>
+    <rdfs:subClassOf rdf:resource="#asteroid"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.planetary_system.virtual_observatory">
+    <rdfs:label>Asteroid Planetary_system Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#planetary_system.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.planetary_system"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.planetary_system">
+    <rdfs:label>Asteroid Planetary_system</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#planetary_system"/>
+    <rdfs:subClassOf rdf:resource="#asteroid"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.planetary_system.spectrum">
+    <rdfs:label>Asteroid Planetary_system Spectrum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#planetary_system.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.planetary_system"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.image.spectrum.virtual_observatory">
+    <rdfs:label>Asteroid Image Spectrum Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#image.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.image.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.image.spectrum"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.image.virtual_observatory">
+    <rdfs:label>Asteroid Image Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#image.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.image"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.image">
+    <rdfs:label>Asteroid Image</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#image"/>
+    <rdfs:subClassOf rdf:resource="#asteroid"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.image.spectrum">
+    <rdfs:label>Asteroid Image Spectrum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#image.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.image"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.image.planetary_system.virtual_observatory">
+    <rdfs:label>Asteroid Image Planetary_system Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#image.planetary_system.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.planetary_system.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.image.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.image.planetary_system"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.image.planetary_system">
+    <rdfs:label>Asteroid Image Planetary_system</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#image.planetary_system"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.planetary_system"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.image"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.image.planetary_system.spectrum">
+    <rdfs:label>Asteroid Image Planetary_system Spectrum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#image.planetary_system.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.planetary_system.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.image.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.image.planetary_system"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.comet.planetary_system.spectrum.virtual_observatory">
+    <rdfs:label>Asteroid Comet Planetary_system Spectrum Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#comet.planetary_system.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.planetary_system.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.planetary_system.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.planetary_system.spectrum"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.comet.spectrum.virtual_observatory">
+    <rdfs:label>Asteroid Comet Spectrum Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#comet.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.spectrum"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.comet.virtual_observatory">
+    <rdfs:label>Asteroid Comet Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#comet.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.comet">
+    <rdfs:label>Asteroid Comet</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#comet"/>
+    <rdfs:subClassOf rdf:resource="#asteroid"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.comet.spectrum">
+    <rdfs:label>Asteroid Comet Spectrum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#comet.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.comet.planetary_system.virtual_observatory">
+    <rdfs:label>Asteroid Comet Planetary_system Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#comet.planetary_system.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.planetary_system.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.planetary_system"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.comet.planetary_system">
+    <rdfs:label>Asteroid Comet Planetary_system</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#comet.planetary_system"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.planetary_system"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.comet.planetary_system.spectrum">
+    <rdfs:label>Asteroid Comet Planetary_system Spectrum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#comet.planetary_system.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.planetary_system.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.planetary_system"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.comet.image.spectrum.virtual_observatory">
+    <rdfs:label>Asteroid Comet Image Spectrum Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#comet.image.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.image.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.spectrum.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.image.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.image.spectrum"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.comet.image.virtual_observatory">
+    <rdfs:label>Asteroid Comet Image Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#comet.image.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.image.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.image"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.comet.image">
+    <rdfs:label>Asteroid Comet Image</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#comet.image"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.image"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.comet.image.spectrum">
+    <rdfs:label>Asteroid Comet Image Spectrum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#comet.image.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.image.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.image"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.comet.image.planetary_system.virtual_observatory">
+    <rdfs:label>Asteroid Comet Image Planetary_system Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#comet.image.planetary_system.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.image.planetary_system.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.planetary_system.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.image.virtual_observatory"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.image.planetary_system"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.comet.image.planetary_system">
+    <rdfs:label>Asteroid Comet Image Planetary_system</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#comet.image.planetary_system"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.image.planetary_system"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.planetary_system"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.image"/>
+  </owl:Class>
+  <owl:Class rdf:ID="asteroid.comet.image.planetary_system.spectrum">
+    <rdfs:label>Asteroid Comet Image Planetary_system Spectrum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#comet.image.planetary_system.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.image.planetary_system.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.planetary_system.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.image.spectrum"/>
+    <rdfs:subClassOf rdf:resource="#asteroid.comet.image.planetary_system"/>
+  </owl:Class>
+</rdf:RDF>

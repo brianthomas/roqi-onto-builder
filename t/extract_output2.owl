@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance#" xmlns:ucd="http://www.ivoa.net/Document/WD/vocabularies/20080222/UCD#" xmlns:r="http://www.ivoa.net/owl/v1.0/registryResource.owl#" xmlns="http://www.ivoa.net/owl/v1.0/registrySubject.owl#" xml:base="http://www.ivoa.net/owl/v1.0/registrySubject.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.ivoa.net/Document/WD/vocabularies/20080222/UCD"/>
+    <owl:imports rdf:resource="http://www.ivoa.net/owl/v1.0/registryResource.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROQI application ontology.</rdfs:comment>
+  </owl:Ontology>
+  <owl:Class rdf:ID="subject"/>
+  <owl:Class rdf:ID="asteroid.comet.image.planetary_system.spectrum.virtual_observatory">
+    <rdfs:label>Asteroid Comet Image Planetary_system Spectrum Virtual_observatory</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#hasResource"/>
+        </owl:onProperty>
+        <owl:hasValue>
+          <r:Resource rdf:ID="t_vopdc_obspm_portal">
+            <r:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">ivo://vopdc.obspm/portal</r:identifier>
+            <r:shortName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VOPDC Portal</r:shortName>
+            <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The VO-Paris Data Centre Portal provides an easy way to access to all VO data
+         available at Paris Observatory.</rdfs:comment>
+            <r:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VO-Paris Data Discovery Portal</r:title>
+          </r:Resource>
+        </owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="hasAvailableUcd">
+    <rdfs:range rdf:resource="http://www.ivoa.net/Document/WD/vocabularies/20080222/UCD#UCD"/>
+    <rdfs:domain rdf:resource="#subject"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasUCD">
+    <rdfs:range rdf:resource="http://www.ivoa.net/Document/WD/vocabularies/20080222/UCD#UCD"/>
+    <rdfs:domain rdf:resource="http://www.ivoa.net/owl/v1.0/registryResource.owl#Resource"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasResource">
+    <rdfs:range rdf:resource="http://www.ivoa.net/owl/v1.0/registryResource.owl#Resource"/>
+    <rdfs:domain rdf:resource="#subject"/>
+  </owl:ObjectProperty>
+</rdf:RDF>

@@ -1,0 +1,37 @@
+
+To install in a particular place (like /usr/local) use 
+
+perl Build.PL --prefix /usr/local
+
+---------------------------------------------
+USAGE:
+
+in order to extract data for the project, you need to run following:
+
+1. Use Matthew Graham's autoharvest.xsl script to get the data from registries
+
+2. run extract_subject_metadata.pl on selected metadata to extract basic, raw
+   metadata. For example:
+
+   > perl extract_subject_metadata.pl data-march-2009/cdsweb.u-strasbg.fr/*.xml > roqi_raw.owl
+
+3. Extract the subject/resource metadata into xml form using create_db_loadfile.pl, for
+   example:
+
+   > perl create_db_loadfile.pl roqi_raw.owl > roqi_data.xml
+
+4. Create the ontology for the tool to use using trim_resource_metadata_in_onto.pl,
+   for example:
+
+   > perl trim_metadata_in_onto.pl roqi_raw.owl > roqi_basic.owl
+
+5. Fix the subject inheritance
+
+   > perl fix_subject_inheritance.pl roqi_basic.owl > roqi.owl
+
+6. Copy over roqi.owl and roqi_data.xml files into src/main/resources
+
+7. Use the ResourceLoaderApp , with the --initdb option, to create and load the 
+   metadata in extracted roqi_data.xml file 
+
+
